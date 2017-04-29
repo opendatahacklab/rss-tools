@@ -1,2 +1,2 @@
 # rss-tools
-Some tools (PHP and javascript) to del with RSS feeds
+Some tools (PHP and javascript) to deal with RSS feeds
