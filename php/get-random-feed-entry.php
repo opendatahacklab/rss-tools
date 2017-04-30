@@ -42,12 +42,17 @@ function getRandomFeedEntry($originalFeedUrl, $pubURL){
 		echo "No entries";
 		return false;
 	}
+
+	$description= (isset($feed->description) ? "$feed->description - A random entry" :
+			'A random entry from the original feed.');
+	
+	//generate the feed
+	$newFeed = new RSSFeedGenerator($feed->title, $description, $feed->link, $pubURL, false);
 	
 	$totalEntries=count($entries);
 	$selectedEntryNumber=rand(0,$totalEntries);
 	$originalEntry=$entries[$selectedEntryNumber];
 	
-	$newFeed = new RSSFeedGenerator($feed->title, null, null, $pubURL, false);
 	$newEntry=new RSSFeedItem();
 	
 	$newEntry->title=$originalEntry->title;
