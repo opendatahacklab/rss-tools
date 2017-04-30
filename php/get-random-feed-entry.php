@@ -77,7 +77,7 @@ function sendRSSHeaders(){
 	 * (il server deve avere il locale italiano installato
 	 */
 	setlocale ( LC_TIME, 'it_IT' );
-	AccessLogUtils::logAccess();
+	//AccessLogUtils::logAccess();
 }
 
 /**
@@ -86,7 +86,7 @@ function sendRSSHeaders(){
  * @param unknown $pubURL
  */
 function outputRandomFeedEntry($originalFeedUrl, $pubURL){
-	sendHeaders();
+	sendRSSHeaders();
 	echo getRandomFeedEntry($originalFeedUrl, $pubURL);
 }
 ?>
