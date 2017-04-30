@@ -27,6 +27,7 @@ require_once '../RSSFeedItem.php';
 require_once '../RSSFeedGenerator.php';
 require_once '../get-random-feed-entry.php';
 
-outputRandomFeedEntry ('http://dev.opendatasicilia.it/albopop/catania/alboct2RSS.php', 'http://www.opendatahacklab.org/rss-tools/albopop/randomcatania.php' );
+outputRandomFeedEntry ('http://dev.opendatasicilia.it/albopop/catania/alboct2RSS.php', 
+		'http://www.opendatahacklab.org/rss-tools/php/albopop/randomcatania.php' );
 
 ?>

@@ -27,6 +27,7 @@ require_once '../RSSFeedItem.php';
 require_once '../RSSFeedGenerator.php';
 require_once '../get-random-feed-entry.php';
 
-outputRandomFeedEntry ( 'http://dev.opendatasicilia.it/albopop/unict/unict2RSS.php', 'http://www.opendatahacklab.org/rss-tools/albopop/randomunict.php' );
+outputRandomFeedEntry ( 'http://dev.opendatasicilia.it/albopop/unict/unict2RSS.php',
+		'http://www.opendatahacklab.org/rss-tools/php/albopop/randomunict.php' );
 
 ?>
