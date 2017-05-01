@@ -1,0 +1,40 @@
+<html>
+<head>
+	<style>
+		article#albopop *{
+			font-family: "Lucida Console", Courier, monospace;
+			font-size : 0.9em;
+			background-color : #f9f9f9;
+			color: #101010;
+			text-decoration:none;
+			margin:0;
+			padding:0.2em;
+			text-align: justify;
+		}
+				
+		article#albopop h2, article#albopop h2 *{
+			background-color : #ffffb3;
+			color: #101010;
+			font-weight:normal;
+			font-family : Arial, Helvetica, sans-serif;
+		}
+		
+		article#albopop{
+			width:20em;
+			border : solid 3px;
+			padding:0;
+			border-color: yellow red blue orange;
+		}
+	</style>
+</head>
+<body>
+	<h1>Test importing a feed</h1>
+	<article id="albopop">
+		<h2><a href="http://albopop.it" class="albopoplink">albopop.it</a></h2>
+	</article>
+	<script type="text/javascript" src="js/rss-tools.js"></script>
+<script type="text/javascript">
+	drawRssWitdget("http://localhost/~cristianolongo/opendatahacklab/rss-tools/php/albopop/randomunict.php", "albopop");
+</script>
+</body>
+</html>
