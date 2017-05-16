@@ -22,7 +22,7 @@
  */
 
 /**
- * Get the first entry of a rss feed and pass it to an handle.
+ * Get a ramdom entry of a rss feed and pass it to an handle.
  *  
  * @param feedUrl the url of the feed
  * @param handler a function which will receive an object with the following fields: feedTitle, description (item description) and link (item link)
@@ -38,7 +38,11 @@ function openRSSFeed(feedURL, handler){
 		    	var feed = parser.parseFromString(xhttp.responseText,"text/xml");	
 		    	var channel = feed.getElementsByTagName("channel")[0]; 
 		    	itemObj.feedTitle = channel.getElementsByTagName("title")[0].textContent;
-		    	var item = channel.getElementsByTagName("item")[0];
+		    	
+		    	//get a random item
+		    	var items = channel.getElementsByTagName("item");
+		    	var n = Math.floor(Math.random()*items.length);
+		    	var item = items[n];
 		    	itemObj.description=item.getElementsByTagName("description")[0].textContent;
 		    	itemObj.link=item.getElementsByTagName("link")[0].textContent;
 				handler(itemObj);

@@ -26,7 +26,10 @@
 require_once 'rss-php/Feed.php';
 require_once 'RSSFeedItem.php';
 require_once 'RSSFeedGenerator.php';
+
 /**
+ * Generate a feed with the same metadata of the original one but with a 
+ * single entry, extracted randomly from the original one.
  * 
  * @param string $originalFeedUrl
  * @param string $pubURL the url where the new feed will be published
