@@ -3,11 +3,6 @@
  * 
  * @author Cristiano Longo
  *
- * This file is part of rss-tools.
- *
- * Copyright 2017 Cristiano Longo
- *
- * 
  * @licstart  The following is the entire license notice for the 
  * JavaScript code in this page.
  * 
